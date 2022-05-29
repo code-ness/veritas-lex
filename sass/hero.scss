@@ -1,9 +1,11 @@
 .hero {
   height: calc(100vh - 124px);
   .container {
+    padding-inline: 10rem;
+    padding-bottom: 3.2rem;
     height: 100%;
     display: flex;
-    column-gap: 8rem;
+    column-gap: 10rem;
   }
   
   &__rich-text {
@@ -16,7 +18,7 @@
 
     h2 {
       margin-bottom: 3.2rem;
-      font-size: 10rem;
+      font-size: 9rem;
       font-family: "Cormorant Garamond", sans-serif;
     }
 
@@ -25,7 +27,7 @@
       width: 50%;
       font-size: 1.6rem;
       line-height: 3rem;
-      color: #7c7c7c;
+      color: $clr-gray;
     }
 
     button {
@@ -64,7 +66,7 @@
       width: 30rem;
       position: absolute;
       bottom: 20%;
-      right: -10%;
+      right: -20%;
 
       display: flex;
       flex-direction: column;

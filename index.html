@@ -9,7 +9,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -63,7 +67,48 @@
         </div>
       </div>
     </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>The Area Where We Practice Our Law</h2>
+        <div class="services__slider swiper swiperServices">
+          <div class="swiper-wrapper">
+            <div class="services__slider swiper-slide">
+              <div class="services__slider-wrapper">
+                <img src="./assets/services/money.png" alt="Services icon">
+                <h3>Financial capital and business</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+              </div>
+            </div>
+            <div class="services__slider swiper-slide">
+              <div class="services__slider-wrapper">
+                <img src="./assets/services/passport.png" alt="Services icon">
+                <h3>Citizenship and immigration</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi saepe quos fugit esse doloremque!</p>
+              </div>
+            </div>
+            <div class="services__slider swiper-slide">
+              <div class="services__slider-wrapper">
+                <img src="./assets/services/criminal.png" alt="Services icon">
+                <h3>Criminal cases and defense</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos quas illum quod libero reiciendis.</p>
+              </div>
+            </div>
+            <div class="services__slider swiper-slide">
+              <div class="services__slider-wrapper">
+                <img src="./assets/services/passport.png" alt="Services icon">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eum consequuntur deserunt minus nisi quae!</p>
+              </div>
+            </div>
+          </div>
+          <img class="services__slider-next-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
+          <img class="services__slider-prev-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 <script type="module" src="app.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>
