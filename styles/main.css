@@ -176,7 +176,7 @@ body {
 }
 
 .services {
-  padding-block: 20rem;
+  padding-block: 10rem;
   position: relative;
 }
 .services .container {
@@ -185,7 +185,7 @@ body {
   align-items: center;
 }
 .services h2 {
-  margin-bottom: 3.2rem;
+  margin-bottom: 5rem;
   width: 50%;
   text-align: center;
   font-size: 6rem;
@@ -238,4 +238,103 @@ body {
   transform: translateY(-50%) rotateY(-180deg);
   cursor: pointer;
   z-index: 10;
+}
+
+.staff {
+  padding-block: 10rem;
+}
+.staff .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.staff h2 {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.staff__slider {
+  width: 100%;
+}
+.staff__box {
+  position: relative;
+}
+.staff__box img {
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  object-position: 0 60%;
+}
+.staff__text-block {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
+  right: 2.4rem;
+  padding: 2.4rem;
+  color: #444444;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.staff__text-block h3 {
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.staff__text-block p {
+  font-size: 1.6rem;
+}
+
+.partners {
+  padding-block: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.partners h2 {
+  margin-bottom: 5rem;
+  width: 50%;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.partners__marquee {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100% 100%;
+}
+.partners__marquee-wrapper {
+  margin-bottom: 5rem;
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+.partners__marquee-wrapper--right {
+  animation-direction: reverse;
+}
+.partners__marquee .partner {
+  margin-inline: 3.2rem;
+  width: 20rem;
+  height: 12rem;
+  background-color: aqua;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners__marquee .partner img {
+  height: 60%;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
