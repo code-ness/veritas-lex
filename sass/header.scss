@@ -28,6 +28,11 @@
       margin-inline: 1.6rem;
       font-size: 1.6rem;
       cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 

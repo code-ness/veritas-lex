@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Veritas Lex Advokatlik Firmasi</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ec93c50a-f8a8-4316-88a3-1d8a1f674098&lang=en_US" type="text/javascript"></script>
+
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
@@ -18,19 +20,25 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
       <div class="header__logo">
         <img src="./assets/logo.png" alt="Logo of the company" class="header__logo-img">
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item">Main</li>
-          <li class="header__nav-item">Services</li>
-          <li class="header__nav-item">Staff</li>
-          <li class="header__nav-item">Partners</li>
-          <li class="header__nav-item">Feedbacks</li>
-          <li class="header__nav-item">Contacts</li>
+          <li href="#header" class="header__nav-item">
+            <a href="header">Main</a>
+          </li>
+          <li href="services" class="header__nav-item">
+            <a href="#services">Services</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#staff">Staff</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact">Contact Us</a>
+          </li>
         </ul>
       </nav>
       <div class="header__locale">
@@ -68,49 +76,38 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
-        <h2>The Area Where We Practice Our Law</h2>
-        <div class="services__slider swiper swiperServices">
-          <div class="swiper-wrapper">
-            <div class="services__slider swiper-slide">
-              <div class="services__slider-wrapper">
-                <img src="./assets/services/money.png" alt="Services icon">
-                <h3>Financial capital and business</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
-              </div>
-            </div>
-            <div class="services__slider swiper-slide">
-              <div class="services__slider-wrapper">
-                <img src="./assets/services/passport.png" alt="Services icon">
-                <h3>Citizenship and immigration</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi saepe quos fugit esse doloremque!</p>
-              </div>
-            </div>
-            <div class="services__slider swiper-slide">
-              <div class="services__slider-wrapper">
-                <img src="./assets/services/criminal.png" alt="Services icon">
-                <h3>Criminal cases and defense</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos quas illum quod libero reiciendis.</p>
-              </div>
-            </div>
-            <div class="services__slider swiper-slide">
-              <div class="services__slider-wrapper">
-                <img src="./assets/services/passport.png" alt="Services icon">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eum consequuntur deserunt minus nisi quae!</p>
-              </div>
+        <h2 class="section-title">The Area Where We Practice Our Law</h2>
+        <div class="services__slider">
+          <div class="services__slider">
+            <div class="services__slider-wrapper">
+              <img src="./assets/services/money.png" alt="Services icon">
+              <h3>Financial capital and business</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
             </div>
           </div>
-          <img class="services__slider-next-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
-          <img class="services__slider-prev-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
+          <div class="services__slider">
+            <div class="services__slider-wrapper">
+              <img src="./assets/services/passport.png" alt="Services icon">
+              <h3>Citizenship and immigration</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi saepe quos fugit esse doloremque!</p>
+            </div>
+          </div>
+          <div class="services__slider">
+            <div class="services__slider-wrapper">
+              <img src="./assets/services/criminal.png" alt="Services icon">
+              <h3>Criminal cases and defense</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos quas illum quod libero reiciendis.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="staff">
+    <section id="staff" class="staff">
       <div class="container">
-        <h2>Our team</h2>
+        <h2 class="section-title">Our team</h2>
         <div class="staff__slider swiper swiperStaff">
           <div class="swiper-wrapper">
 
@@ -178,110 +175,15 @@
               </div>
             </div>
           </div>
-          <img class="services__slider-next-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
-          <img class="services__slider-prev-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
+          <img class="staff-next-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
+          <img class="staff-prev-btn navBtn" src="./assets/arrows/arrow-right-black.png" alt="">
         </div>
       </div>
     </section>
 
-    <section class="partners">
-      <h2>Our partners</h2>
-
-      <div class="partners__marquee">
-        <div class="partners__marquee-wrapper">
-          <div class="partner">
-            <img src="./assets/apple.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/twitter.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/app-store.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/tik-tok.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/youtube.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/microsoft.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/gmail.png" alt="Logo of the company">
-          </div>
-        </div>
-        <div class="partners__marquee-wrapper">
-          <div class="partner">
-            <img src="./assets/apple.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/twitter.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/app-store.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/tik-tok.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/youtube.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/microsoft.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/gmail.png" alt="Logo of the company">
-          </div>
-        </div>
-      </div>
-      <div class="partners__marquee">
-        <div class="partners__marquee-wrapper partners__marquee-wrapper--right">
-          <div class="partner">
-            <img src="./assets/apple.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/twitter.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/youtube.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/app-store.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/tik-tok.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/gmail.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/microsoft.png" alt="Logo of the company">
-          </div>
-        </div>
-        <div class="partners__marquee-wrapper partners__marquee-wrapper--right">
-          <div class="partner">
-            <img src="./assets/apple.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/twitter.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/youtube.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/app-store.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/tik-tok.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/gmail.png" alt="Logo of the company">
-          </div>
-          <div class="partner">
-            <img src="./assets/microsoft.png" alt="Logo of the company">
-          </div>
-        </div>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div id="map" style="width: 600px; height: 400px"></div>
       </div>
     </section>
   </main>

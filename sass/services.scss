@@ -1,27 +1,32 @@
 .services {
-  padding-block: 10rem;
-  position: relative;
+  background-image: linear-gradient(to bottom, $clr-black 50%, $clr-white 50%);
+  color: $clr-white;
+  
+  &::after {
+    content: "";
+    display: block;
+    min-height: 98vh;
+  }
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
 
-  h2 {
-    margin-bottom: 5rem;
-    width: 50%;
-    text-align: center;
-    font-size: 6rem;
-    font-family: "Cormorant Garamond", serif;
+    position: sticky;
+    top: 20px;
+  
+    mix-blend-mode: difference;
+    min-height: 98vh;
   }
 
   &__slider {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    column-gap: 4rem;
     
     &-wrapper {
       padding: 2rem 4rem;
-      height: 30rem;
+      height: 40rem;
       border: 1px solid $clr-gray-light;
 
       display: flex;
@@ -45,29 +50,6 @@
       width: 90%;
       font-size: 1.8rem;
       line-height: 2.3rem;
-      color: $clr-gray;
-    }
-
-    &-next-btn.navBtn {
-      width: 3.2rem;
-      height: 3.2rem;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      cursor: pointer;
-      z-index: 10;
-    }
-
-    &-prev-btn.navBtn {
-      width: 3.2rem;
-      height: 3.2rem;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%) rotateY(-180deg);
-      cursor: pointer;
-      z-index: 10;
     }
   }
 }

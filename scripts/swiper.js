@@ -1,13 +1,4 @@
-var swiperServices = new Swiper(".swiperServices", {
-  loop: true,
-  autoplay: true,
-  slidesPerView: 3,
-  spaceBetween: 50,
-  navigation: {
-    nextEl: ".services__slider-next-btn",
-    prevEl: ".services__slider-prev-btn",
-  },
-});
+var sliders = document.querySelectorAll(".staff__box");
 
 var swiperServices = new Swiper(".swiperStaff", {
   loop: true,
@@ -15,7 +6,12 @@ var swiperServices = new Swiper(".swiperStaff", {
   slidesPerView: 3,
   spaceBetween: 60,
   navigation: {
-    nextEl: ".services__slider-next-btn",
-    prevEl: ".services__slider-prev-btn",
+    nextEl: ".staff-next-btn",
+    prevEl: ".staff-prev-btn",
   },
 });
+
+sliders.forEach(item => {
+  item.addEventListener("mouseover", () => swiperServices.autoplay.stop());
+  item.addEventListener("mouseout", () => swiperServices.autoplay.start());
+})

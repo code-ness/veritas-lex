@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,14 @@ body {
 
 .none {
   display: none;
+}
+
+.section-title {
+  margin-bottom: 5rem;
+  width: 50%;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .header {
@@ -53,6 +62,10 @@ body {
   margin-inline: 1.6rem;
   font-size: 1.6rem;
   cursor: pointer;
+}
+.header__nav-item a {
+  text-decoration: none;
+  color: inherit;
 }
 .header__locale {
   position: relative;
@@ -176,28 +189,31 @@ body {
 }
 
 .services {
-  padding-block: 10rem;
-  position: relative;
+  background-image: linear-gradient(to bottom, #000 50%, #fff 50%);
+  color: #fff;
+}
+.services::after {
+  content: "";
+  display: block;
+  min-height: 98vh;
 }
 .services .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-.services h2 {
-  margin-bottom: 5rem;
-  width: 50%;
-  text-align: center;
-  font-size: 6rem;
-  font-family: "Cormorant Garamond", serif;
+  position: sticky;
+  top: 20px;
+  mix-blend-mode: difference;
+  min-height: 98vh;
 }
 .services__slider {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  column-gap: 4rem;
 }
 .services__slider-wrapper {
   padding: 2rem 4rem;
-  height: 30rem;
+  height: 40rem;
   border: 1px solid #d8d8d8;
   display: flex;
   flex-direction: column;
@@ -217,27 +233,6 @@ body {
   width: 90%;
   font-size: 1.8rem;
   line-height: 2.3rem;
-  color: #7c7c7c;
-}
-.services__slider-next-btn.navBtn {
-  width: 3.2rem;
-  height: 3.2rem;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 10;
-}
-.services__slider-prev-btn.navBtn {
-  width: 3.2rem;
-  height: 3.2rem;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotateY(-180deg);
-  cursor: pointer;
-  z-index: 10;
 }
 
 .staff {
@@ -247,12 +242,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.staff h2 {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 6rem;
-  font-family: "Cormorant Garamond", serif;
 }
 .staff__slider {
   width: 100%;
@@ -265,12 +254,21 @@ body {
   height: 60rem;
   object-fit: cover;
   object-position: 0 60%;
+  transition: all 0.5s ease-in-out;
+}
+.staff__box:hover > .staff__text-block {
+  bottom: 2.4rem;
+}
+.staff__box:hover > img {
+  transform: scale(1.1);
+  filter: blur(2px);
 }
 .staff__text-block {
   position: absolute;
-  bottom: 2.4rem;
+  bottom: -50%;
   left: 2.4rem;
   right: 2.4rem;
+  transition: all 0.5s ease-in-out;
   padding: 2.4rem;
   color: #444444;
   background: rgba(255, 255, 255, 0.8);
@@ -287,54 +285,23 @@ body {
 .staff__text-block p {
   font-size: 1.6rem;
 }
-
-.partners {
-  padding-block: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+.staff-next-btn.navBtn {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
 }
-.partners h2 {
-  margin-bottom: 5rem;
-  width: 50%;
-  text-align: center;
-  font-size: 6rem;
-  font-family: "Cormorant Garamond", serif;
-}
-.partners__marquee {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100% 100%;
-}
-.partners__marquee-wrapper {
-  margin-bottom: 5rem;
-  display: flex;
-  animation: marquee 20s linear infinite;
-}
-.partners__marquee-wrapper--right {
-  animation-direction: reverse;
-}
-.partners__marquee .partner {
-  margin-inline: 3.2rem;
-  width: 20rem;
-  height: 12rem;
-  background-color: aqua;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.partners__marquee .partner img {
-  height: 60%;
-  object-fit: contain;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.staff-prev-btn.navBtn {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotateY(-180deg);
+  cursor: pointer;
+  z-index: 10;
 }
