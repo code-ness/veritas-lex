@@ -1,0 +1,55 @@
+.footer {  
+  background-color: #000;
+  color: #fff;
+  .container {
+    padding: 6rem 14rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  }
+
+  h3 {
+    margin-bottom: 2.4rem;
+    font-size: 1rem;
+    letter-spacing: .07em;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li {
+      margin-bottom: .6rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  ul.footer__socials {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 6rem;
+    right: 34.4rem;
+    flex-direction: row;
+
+    img {
+      width: 100%;
+    }
+  }
+  .footer__socials-img-wrapper {
+    margin-right: 1rem;
+    padding: .5rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: $clr-gray;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  .follow-us {
+    position: absolute;
+    bottom: 6rem;
+    right: 8rem;
+    font-size: 1.4rem;
+  }
+}
+

@@ -28,28 +28,28 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li href="#header" class="header__nav-item">
-            <a href="header">Main</a>
+            <a id="nav-link-1" href="header">Main</a>
           </li>
           <li href="services" class="header__nav-item">
-            <a href="#services">Services</a>
+            <a id="nav-link-2" href="#services">Services</a>
           </li>
           <li class="header__nav-item">
-            <a href="#staff">Staff</a>
+            <a id="nav-link-3" href="#staff">Staff</a>
           </li>
           <li class="header__nav-item">
-            <a href="#contact">Contact Us</a>
+            <a id="nav-link-4" href="#contact">Contact Us</a>
           </li>
         </ul>
       </nav>
       <div class="header__locale">
-        <div data-locale-active="UZ" class="header__locale-active locale-btn-js">
-          <span class="locale-text-js">UZ</span>
-          <img src="./assets/locale/UZ.png" alt="uzbek language">
+        <div data-locale_active="RU" class="header__locale-active locale-btn-js">
+          <span class="locale-text-js">RU</span>
+          <img src="./assets/locale/RU.png" alt="uzbek language">
         </div>
-        <div class="header__locale-list none locale-select-js">
-          <div data-locale="RU" class="header__locale-item">
-            <span>RU</span>
-            <img src="./assets/locale/RU.png" alt="russian language" class="header__locale-item-img">
+        <div data-locale="UZ" class="header__locale-list none locale-select-js">
+          <div class="header__locale-item">
+            <span>UZ</span>
+            <img src="./assets/locale/UZ.png" alt="russian language" class="header__locale-item-img">
           </div>
         </div>
       </div>
@@ -80,28 +80,60 @@
       <div class="container">
         <h2 class="section-title">The Area Where We Practice Our Law</h2>
         <div class="services__slider">
-          <div class="services__slider">
-            <div class="services__slider-wrapper">
-              <img src="./assets/services/money.png" alt="Services icon">
-              <h3>Financial capital and business</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
-            </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
           </div>
-          <div class="services__slider">
-            <div class="services__slider-wrapper">
-              <img src="./assets/services/passport.png" alt="Services icon">
-              <h3>Citizenship and immigration</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi saepe quos fugit esse doloremque!</p>
-            </div>
+          <div class="services__slider-wrapper">
+            <h3>Citizenship and immigration</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi saepe quos fugit esse doloremque!</p>
           </div>
-          <div class="services__slider">
-            <div class="services__slider-wrapper">
-              <img src="./assets/services/criminal.png" alt="Services icon">
-              <h3>Criminal cases and defense</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos quas illum quod libero reiciendis.</p>
-            </div>
+          <div class="services__slider-wrapper">
+            <h3>Criminal cases and defense</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos quas illum quod libero reiciendis.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="services services__more">
+      <div class="container">
+        <button class="btn-cta btn-show-more-js">Show more</button>
+        <div class="services__slider services__grid hidden services-more-js">
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+          <div class="services__slider-wrapper">
+            <h3>Financial capital and business</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+          </div>
+        </div>
+        <button class="btn-cta btn-show-less-js">Show less</button>
       </div>
     </section>
 
@@ -112,63 +144,35 @@
           <div class="swiper-wrapper">
 
             <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
+              <img src="./assets/staff/Yusuf.jpg" alt="Staff image">
               <div class="staff__text-block">
                 <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
                 <p class="staff__position">Senior CSGO Developer</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
+              <img src="./assets/staff/aziz.jpg" alt="Staff image">
               <div class="staff__text-block">
                 <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
                 <p class="staff__position">Senior CSGO Developer</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
+              <img src="./assets/staff/feruz.jpg" alt="Staff image">
               <div class="staff__text-block">
                 <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
                 <p class="staff__position">Senior CSGO Developer</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
+              <img src="./assets/staff/Jamshed.jpg" alt="Staff image">
               <div class="staff__text-block">
                 <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
                 <p class="staff__position">Senior CSGO Developer</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
-              <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
-              </div>
-            </div>
-            <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
-              <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
-              </div>
-            </div>
-            <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
-              <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
-              </div>
-            </div>
-            <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
-              <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
-              </div>
-            </div>
-            <div class="staff__box swiper-slide">
-              <img src="./assets/hero.jpg" alt="">
+              <img src="./assets/staff/laziz.jpg" alt="Staff image">
               <div class="staff__text-block">
                 <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
                 <p class="staff__position">Senior CSGO Developer</p>
@@ -183,11 +187,62 @@
 
     <section id="contact" class="contact">
       <div class="container">
-        <div id="map" style="width: 600px; height: 400px"></div>
+        <div class="contact__map" id="map"></div>
+        <div class="contact__feedback feedback-modal-js">
+          <h3>FEEDBACK FORM</h3>
+          <form class="contact__form" action="https://formsubmit.co/486730602cfb48096bedce15973bd5f5" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="contact__input-wrapper">
+              <input placeholder="" class="contact__input" type="text" id="name" name="Name" required>
+              <label for="name">Name</label>
+            </div>
+            <div class="contact__input-wrapper">
+              <input placeholder="" class="contact__input" type="tel" id="phone" name="Phone" required>
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="contact__input-wrapper">
+              <textarea placeholder="" class="contact__input contact__input--textarea" type="text" id="feedback" name="Feedback" required></textarea>
+              <label for="feedback">Feedback</label>
+            </div>
+            <button class="contact__form-btn" type="submit">Send</button>
+          </form> 
+        </div>
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__address">
+        <h3>OUR ADDRESS</h3>
+        <li>123456 Moscow</li>
+        <li>Lane Dyuzheva</li>
+        <li>building  47 office 202</li>
+      </ul>
+      <ul class="footer__contacts">
+        <h3>OUR CONTACTS</h3>
+        <li>veritaslex@gmail.com</li>
+        <li>+123 4567 89 01</li>
+      </ul>
+      <ul class="footer__socials">
+        <a href="#" class="footer__socials-img-wrapper">
+          <img src="assets/socials/facebook.png" alt="Link facebook profile">
+        </a>
+        <a href="#" class="footer__socials-img-wrapper">
+          <img src="assets/socials/instagram.png" alt="Link instagram profile">
+        </a>
+        <a href="#" class="footer__socials-img-wrapper">
+          <img src="assets/socials/twitter.png" alt="Link twitter profile">
+        </a>
+        <a href="#" class="footer__socials-img-wrapper">
+          <img src="assets/socials/telegram.png" alt="Link telegram profile">
+        </a>
+      </ul>
+      <p class="follow-us">&#8210 follow us</p>
+    </div>
+  </footer>
 </body>
 <script type="module" src="app.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/i18next/i18next.js"></script>
+
 </html>

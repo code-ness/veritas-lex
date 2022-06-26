@@ -3,7 +3,7 @@
 ymaps.ready(init);
 function init(){ 
     var myMap = new ymaps.Map("map", {
-      center: [39.64651716, 66.92870835],
+      center: [39.64651716, 66.93],
       zoom: 17
     }),
     myGeoObject = new ymaps.GeoObject({

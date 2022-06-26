@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #eef0f5;
+  background-color: #fff;
 }
 
 .container {
@@ -35,7 +35,8 @@ body {
 }
 
 .header {
-  padding-block: 3.2rem;
+  padding-block: 1.6rem;
+  background-color: #000;
 }
 .header .container {
   display: grid;
@@ -43,8 +44,8 @@ body {
   align-items: center;
 }
 .header__logo {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 .header__logo img {
   width: 100%;
@@ -60,22 +61,24 @@ body {
 }
 .header__nav-item {
   margin-inline: 1.6rem;
-  font-size: 1.6rem;
   cursor: pointer;
 }
 .header__nav-item a {
+  font-size: 1.8rem;
   text-decoration: none;
-  color: inherit;
+  color: #fff;
 }
 .header__locale {
   position: relative;
+  color: #fff;
+  font-size: 1.4rem;
 }
 .header__locale img {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3rem;
+  height: 3rem;
 }
 .header__locale-active {
-  padding: 0.6rem 1.6rem;
+  padding: 0.2rem 1.6rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -84,16 +87,20 @@ body {
   margin-inline: 0.8rem;
 }
 .header__locale-active img:last-of-type {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3rem;
+  height: 3rem;
 }
 .header__locale-list {
-  padding: 0.6rem 1.6rem;
+  padding: 0.2rem 1.6rem;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 3.6rem;
+  top: 4rem;
   left: 0;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 .header__locale-item {
   display: flex;
@@ -105,11 +112,10 @@ body {
 }
 
 .hero {
-  height: calc(100vh - 124px);
+  height: calc(100vh - 82px);
 }
 .hero .container {
-  padding-inline: 10rem;
-  padding-bottom: 3.2rem;
+  padding: 3.2rem 10rem;
   height: 100%;
   display: flex;
   column-gap: 10rem;
@@ -140,12 +146,12 @@ body {
   border: 1px solid #000;
   font-size: 1.4rem;
   cursor: pointer;
-  background-color: #eef0f5;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
 .hero__rich-text button:hover {
   background-color: #000;
-  color: #eef0f5;
+  color: #fff;
   transform: scale(1.1);
 }
 .hero__banner {
@@ -195,7 +201,7 @@ body {
 .services::after {
   content: "";
   display: block;
-  min-height: 98vh;
+  min-height: 80vh;
 }
 .services .container {
   display: flex;
@@ -205,15 +211,16 @@ body {
   position: sticky;
   top: 20px;
   mix-blend-mode: difference;
-  min-height: 98vh;
+  min-height: 80vh;
 }
 .services__slider {
-  display: flex;
-  column-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
 }
 .services__slider-wrapper {
   padding: 2rem 4rem;
-  height: 40rem;
+  height: 42rem;
   border: 1px solid #d8d8d8;
   display: flex;
   flex-direction: column;
@@ -233,6 +240,50 @@ body {
   width: 90%;
   font-size: 1.8rem;
   line-height: 2.3rem;
+}
+
+.services__more.services {
+  padding-top: 0;
+  background-image: none;
+  color: #000;
+}
+.services__more.services::after {
+  display: none;
+}
+.services__more.services .container {
+  mix-blend-mode: unset;
+  min-height: unset;
+}
+.services__more.services .services__grid {
+  margin-bottom: 3.2rem;
+  overflow: hidden;
+  max-height: 200rem;
+  transition: all 0.3s ease-in-out;
+}
+.services__more.services .services__grid.hidden {
+  max-height: 0;
+}
+
+.btn-show-less-js {
+  display: none;
+}
+
+.btn-cta {
+  padding-inline: 3.2rem;
+  height: 4.3rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cta:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  transform: scale(1.1);
 }
 
 .staff {
@@ -304,4 +355,129 @@ body {
   transform: translateY(-50%) rotateY(-180deg);
   cursor: pointer;
   z-index: 10;
+}
+
+.contact {
+  padding-top: 10rem;
+  background-color: #000;
+}
+.contact .container {
+  position: relative;
+}
+.contact__map {
+  width: 100%;
+  height: 50rem;
+}
+.contact__feedback {
+  padding: 5rem 3.4rem;
+  width: 40rem;
+  height: 60rem;
+  position: absolute;
+  top: -5rem;
+  right: 8rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+}
+.contact__feedback h3 {
+  margin-bottom: 8rem;
+}
+.contact__feedback .contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__feedback .contact__form-btn {
+  width: 100%;
+  height: 4.3rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.contact__input-wrapper {
+  margin-bottom: 6rem;
+  position: relative;
+}
+.contact__input-wrapper .contact__input {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+}
+.contact__input-wrapper .contact__input:focus-visible {
+  outline: none;
+}
+.contact__input-wrapper .contact__input--textarea {
+  border: 1px solid #d8d8d8;
+}
+.contact__input-wrapper .contact__input:focus-visible ~ label,
+.contact__input-wrapper .contact__input:not(:placeholder-shown).contact__input:not(:focus-visible) ~ label {
+  top: -3.2rem;
+}
+.contact__input-wrapper textarea {
+  width: 100%;
+  height: 10rem;
+}
+.contact__input-wrapper textarea:focus-visible {
+  outline: none;
+}
+.contact__input-wrapper label {
+  margin-inline: 0.5rem;
+  padding-block: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+.footer .container {
+  padding: 6rem 14rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.footer h3 {
+  margin-bottom: 2.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.07em;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer ul li {
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+}
+.footer ul.footer__socials {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 6rem;
+  right: 34.4rem;
+  flex-direction: row;
+}
+.footer ul.footer__socials img {
+  width: 100%;
+}
+.footer .footer__socials-img-wrapper {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #7c7c7c;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.footer .follow-us {
+  position: absolute;
+  bottom: 6rem;
+  right: 8rem;
+  font-size: 1.4rem;
 }
