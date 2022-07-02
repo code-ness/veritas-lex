@@ -53,3 +53,28 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .footer {
+    .container {
+      padding-inline: 8rem;
+      padding-top: 10rem;
+    }
+    ul {
+      justify-self: center;
+    }
+    ul:first-of-type {
+      justify-self: flex-start;
+    }
+    ul.footer__socials {
+      position: static;
+      justify-self: flex-end;
+      align-self: center;
+    }
+    .follow-us {
+      position: static;
+      justify-self: flex-end;
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+  }
+}

@@ -92,3 +92,79 @@
     }
   }
 }
+
+@media only screen and (max-width: 1520px) {
+  .hero {
+    .container {
+      padding-inline: 6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .hero {
+    h2 {
+      font-size: 8rem;
+    }
+    &__banner-text {
+      padding-block: 4rem;
+      width: 60%;
+      bottom: 4rem;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    .container {
+      column-gap: 4rem;
+      align-items: center;
+    }
+    h2 {
+      font-size: 6rem;
+    }
+
+    &__banner {
+      height: 90%;
+
+      &-text {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    .container {
+      position: relative;
+      flex-direction: column;
+    }
+    .container > div {
+      width: 100%;
+    }
+
+    &__rich-text {
+      margin-top: auto;
+      z-index: 10;
+    }
+
+    &__banner {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &-img {
+        img {
+          object-position: 0 40%;
+        }
+      }
+      &-text {
+        display: none;
+      }
+    }
+  }
+}

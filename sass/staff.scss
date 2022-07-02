@@ -17,22 +17,14 @@
       width: 100%;
       height: 60rem;
       object-fit: cover;
-      object-position: 0 60%;
+      object-position: center;
       transition: all .5s ease-in-out;
     }
   }
 
-  &__box:hover > .staff__text-block {
-    bottom: 2.4rem;
-  }
-  &__box:hover > img{
-    transform: scale(1.1);
-    filter: blur(2px);
-  }
-
   &__text-block {
     position: absolute;
-    bottom: -50%;
+    bottom: 2.4rem;
     left: 2.4rem;
     right: 2.4rem;
     transition: all .5s ease-in-out;
@@ -74,5 +66,23 @@
     transform: translateY(-50%) rotateY(-180deg);
     cursor: pointer;
     z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .staff {
+    &__box {
+      img {
+        height: 50rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1520px) {
+  .staff {
+    .container {
+      padding-inline: 6rem;
+    }
   }
 }

@@ -84,3 +84,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 1520px) {
+  .contact {
+    padding-inline: 6rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact {
+    &__feedback {
+      right: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact {
+    &__feedback {
+      right: 2rem;
+    }
+  }
+}

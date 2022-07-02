@@ -1,26 +1,18 @@
 .services {
-  background-image: linear-gradient(to bottom, $clr-black 50%, $clr-white 50%);
-  color: $clr-white;
-
-  &::after {
-    content: "";
-    display: block;
-    min-height: 80vh;
-  }
+  background-color: #000;
+  color: #fff;
   .container {
+    padding-block: 6rem;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    position: sticky;
-    top: 20px;
-
-    mix-blend-mode: difference;
-    min-height: 80vh;
   }
 
   &__slider {
+    padding-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
@@ -59,16 +51,19 @@
 .services__more.services {
   padding-top: 0;
   background-image: none;
-  color: #000;
   
   &::after {
     display: none;
   }
   
   .container {
-    
+    padding-top: 0;
     mix-blend-mode: unset;
     min-height: unset;
+  }
+
+  .services__slider {
+    padding-bottom: 0;
   }
   
   .services__grid {
@@ -84,6 +79,7 @@
 }
 
 .btn-show-less-js {
+  margin-bottom: 4rem;
   display: none;
 }
 
@@ -91,16 +87,38 @@
   padding-inline: 3.2rem;
   height: 4.3rem;
   border: none;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-size: 1.4rem;
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
 
 .btn-cta:hover {
-  color: #000;
-  background-color: #fff;
-  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
   transform: scale(1.1);
+}
+.services__slider-wrapper.none {
+  display: none;
+}
+
+@media only screen and (max-width: 1520px) {
+  .services {
+    .container {
+      padding-inline: 6rem;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .services__more {
+    display: none;
+  }
+  .services__slider {
+    grid-template-columns: repeat(2, 1fr);
+    &-wrapper.none {
+      display: block;
+    }
+  }
 }
