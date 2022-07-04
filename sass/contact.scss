@@ -122,34 +122,36 @@
       height: 40rem;
     }
     &__feedback {
-      width: 70%;
+      width: 80%;
       position: static;
-    }
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .contact {
-    padding-inline: 4rem;
-    &__map {
-      height: 30rem;
-    }
-  }
-}
-
-
-@media only screen and (max-width: 900px) {
-  .contact {
-    &__feedback {
-      width: 90%;
     }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .contact {
+    padding-inline: 4rem;
+    &__map {
+      height: 30rem;
+    }
     &__feedback {
+      height: max-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact {
+    padding: 4rem 2rem;
+    .container {
+      padding-bottom: 0;
+    }
+    &__feedback {
+      padding: 4rem 2.4rem;
       width: 100%;
+    }
+    &__map {
+      height: 20rem;
     }
   }
 }

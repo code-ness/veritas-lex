@@ -15,7 +15,6 @@ localeSelect.addEventListener("click", (e) => {
 
   var locale = localeSelect.dataset.locale;
   var localeActive = localeBtn.dataset.locale_active;
-
   changeLng(locale.toLowerCase());
 
   localeSelect.dataset.locale = localeActive;
@@ -50,7 +49,6 @@ i18next.init({
     }
   }
 }, function(err, t) {
-  // init set content
   updateContent();
 });
 

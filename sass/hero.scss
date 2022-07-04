@@ -1,7 +1,7 @@
 .hero {
   height: calc(100vh - 82px);
   .container {
-    padding: 3.2rem 10rem;
+    padding: 4rem 10rem;
     height: 100%;
     display: flex;
     column-gap: 10rem;
@@ -122,16 +122,32 @@
       column-gap: 4rem;
       align-items: center;
     }
-    h2 {
-      font-size: 6rem;
+    &__rich-text {
+      h2 {
+        margin-bottom: 4rem;
+        font-size: 6rem;
+      }
+      p {
+        margin-bottom: 4rem;
+      }
     }
 
     &__banner {
-      height: 90%;
+      height: 80%;
 
       &-text {
         width: 80%;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__banner {
+    height: 75%;
+
+    &-text {
+      padding: 3rem 5rem;
     }
   }
 }

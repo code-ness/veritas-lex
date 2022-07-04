@@ -114,6 +114,10 @@
 
 @media only screen and (max-width: 480px) {
   .staff {
+    padding-block: 4rem;
+    .container {
+      padding-inline: 2rem;
+    }
     &__box {
       img {
         height: 50rem;
