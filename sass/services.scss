@@ -122,3 +122,45 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .services {
+    .container {
+      padding-inline: 4rem;
+    }
+  }
+  .services__slider {
+    grid-gap: 2rem;
+
+    &-wrapper {
+      p {
+        line-height: 2.7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-title {
+    width: 80%;
+  }
+  .services__slider {
+    grid-template-columns: 1fr;
+
+    &-wrapper {
+      margin-inline: auto;
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services__slider {
+    grid-row-gap: 4rem;
+    &-wrapper {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

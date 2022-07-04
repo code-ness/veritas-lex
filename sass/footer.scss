@@ -78,3 +78,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    border-top: 1px solid #fff;
+    .container {
+      padding-top: 8rem;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 4rem;
+    }
+
+    ul.footer__contacts {
+      justify-self: flex-end;
+    }
+
+    ul.footer__socials {
+      justify-self: flex-start;
+      grid-row: 2 / 3;
+    }
+
+    .follow-us {
+      margin-right: 3.2rem;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+  }
+}

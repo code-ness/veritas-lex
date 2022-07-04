@@ -69,6 +69,14 @@
   }
 }
 
+@media only screen and (max-width: 1520px) {
+  .staff {
+    .container {
+      padding-inline: 6rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .staff {
     &__box {
@@ -79,10 +87,19 @@
   }
 }
 
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 900px) {
   .staff {
     .container {
-      padding-inline: 6rem;
+      padding-inline: 4rem;
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .staff {
+    &__box {
+      img {
+        height: 70rem;
+      }
+    }
+  }
+} 

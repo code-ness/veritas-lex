@@ -91,6 +91,21 @@
   }
 }
 
+
+@media only screen and (max-width: 1520px) {
+  .header {
+    .container {
+      padding-inline: 6rem;
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .header {
+    &__nav-item {
+      font-size: 1.6rem;
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   .header {
     a {
@@ -99,18 +114,95 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 768px) {
   .header {
-    &__nav-item {
-      font-size: 1.6rem;
+    .mob-hide {
+      display: none;
+    }
+    .container {
+      padding-inline: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__locale {
+      width: max-content;
     }
   }
 }
 
-@media only screen and (max-width: 1520px) {
-  .header {
-    .container {
-      padding-inline: 6rem;
+.navbar-modal {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: min-content min-content;
+
+  background-color: #fff;
+  width: 30rem;
+  height: 100vh;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transition: all .3s ease-in-out;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  &__nav {
+    margin-top: 6rem;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+
+    &-item {
+      margin-inline: 1.6rem;
+      margin-bottom: 3.2rem;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      
+      a {
+        margin-left: 1.6rem;
+        font-size: 2rem;
+        text-decoration: none;
+        color: $clr-black;
+      }
     }
   }
+
+  &__logo {
+    width: 6rem;
+    height: 6rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .close-icon {
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 99;
+  transition: all .1s ease-in-out;
+}
+.backdrop.left {
+  left: -100%;
+}
+.navbar-modal.left {
+  left: -100%;
 }

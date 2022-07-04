@@ -20,12 +20,49 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  <div class="backdrop left"></div>
+  <div class="navbar-modal left">
+    <div class="navbar-modal__logo">
+      <img src="./assets/logo.png" alt="Logo of the company">
+    </div>
+    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+      <desc>Created with Fabric.js 1.7.22</desc>
+      <defs>
+      </defs>
+      <g transform="translate(128 128) scale(0.72 0.72)" style="">
+        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+        <path d="M 45 0 c 24.813 0 45 20.187 45 45 c 0 24.813 -20.187 45 -45 45 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 z M 59.5 62.5 v -35 L 24.5 45 L 59.5 62.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+      </g>
+      </g>
+    </svg>
+    <nav class="navbar-modal__nav">
+      <ul class="navbar-modal__nav-list">
+        <li class="navbar-modal__nav-item">
+          <img src="assets/home.png" alt="">
+          <a id="nav-link-1" href="#header">Main</a>
+        </li>
+        <li class="navbar-modal__nav-item">
+          <img src="assets/balance.png" alt="">
+          <a id="nav-link-2" href="#services">Services</a>
+        </li>
+        <li class="navbar-modal__nav-item">
+          <img src="assets/group.png" alt="">
+          <a id="nav-link-3" href="#staff">Staff</a>
+        </li>
+        <li class="navbar-modal__nav-item">
+          <img src="assets/contact.png" alt="">
+          <a id="nav-link-4" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <header id="header" class="header">
     <div class="container">
-      <div class="header__logo">
+      <svg class="header__menu" fill="#fff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="40px" height="40px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
+      <div class="header__logo mob-hide">
         <img src="./assets/logo.png" alt="Logo of the company" class="header__logo-img">
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav mob-hide">
         <ul class="header__nav-list">
           <li href="#header" class="header__nav-item">
             <a id="nav-link-1" href="header">Main</a>

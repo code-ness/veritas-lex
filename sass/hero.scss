@@ -138,9 +138,29 @@
 
 @media only screen and (max-width: 900px) {
   .hero {
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 110%;
+      height: 110%;
+      background-image: url(../assets/hero-mob.webp);
+      background-size: cover;
+      filter: blur(3px)
+    }
     .container {
+      padding: 6rem 4rem;
       position: relative;
       flex-direction: column;
+    }
+
+    h2 {
+      width: 80%;
+      font-size: 8rem;
     }
     .container > div {
       width: 100%;
@@ -149,22 +169,29 @@
     &__rich-text {
       margin-top: auto;
       z-index: 10;
+      p {
+        color: #000;
+      }
+      button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+      }
     }
 
     &__banner {
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      &-img {
-        img {
-          object-position: 0 40%;
-        }
-      }
-      &-text {
-        display: none;
-      }
+      display: none;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: calc(100vh - 72px);
   }
 }
