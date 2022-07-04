@@ -103,3 +103,31 @@
     }
   }
 } 
+
+@media only screen and (max-width: 600px) {
+  .staff {
+    h2 {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .staff {
+    &__box {
+      img {
+        height: 50rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .staff {
+    &__box {
+      img {
+        height: 44rem;
+      }
+    }
+  }
+}

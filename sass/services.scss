@@ -118,7 +118,7 @@
   .services__slider {
     grid-template-columns: repeat(2, 1fr);
     &-wrapper.none {
-      display: block;
+      display: flex;
     }
   }
 }
@@ -149,6 +149,7 @@
     grid-template-columns: 1fr;
 
     &-wrapper {
+      margin-inline: auto;
       align-items: center;
       text-align: center;
       width: 80%;
