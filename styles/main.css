@@ -43,6 +43,9 @@ body {
   grid-template-columns: max-content 1fr max-content;
   align-items: center;
 }
+.header__menu {
+  display: none;
+}
 .header__logo {
   width: 5rem;
   height: 5rem;
@@ -113,35 +116,6 @@ body {
   margin-right: 0.8rem;
 }
 
-@media only screen and (max-width: 1520px) {
-  .header .container {
-    padding-inline: 6rem;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .header__nav-item {
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .header a {
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header .mob-hide {
-    display: none;
-  }
-  .header .container {
-    padding-inline: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__locale {
-    width: max-content;
-  }
-}
 .navbar-modal {
   padding: 3rem;
   display: grid;
@@ -211,6 +185,47 @@ body {
   left: -100%;
 }
 
+@media only screen and (max-width: 1520px) {
+  .header .container {
+    padding-inline: 6rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .header__nav-item {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header a {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__menu {
+    display: block;
+  }
+  .header .mob-hide {
+    display: none;
+  }
+  .header .container {
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__locale {
+    width: max-content;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header .container {
+    padding-inline: 1.6rem;
+  }
+  .header__menu {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 .hero {
   height: calc(100vh - 82px);
 }
@@ -505,24 +520,37 @@ body {
 @media only screen and (max-width: 768px) {
   .section-title {
     width: 80%;
+    font-size: 5rem;
   }
 
   .services__slider {
     grid-template-columns: 1fr;
   }
   .services__slider-wrapper {
-    margin-inline: auto;
+    align-items: center;
+    text-align: center;
     width: 80%;
+  }
+  .services__slider-wrapper h3 {
+    font-size: 3.8rem;
   }
 }
 @media only screen and (max-width: 600px) {
+  .services h2 {
+    font-size: 4.5rem;
+  }
+
   .services__slider {
     grid-row-gap: 4rem;
   }
   .services__slider-wrapper {
-    align-items: center;
-    text-align: center;
     width: 100%;
+  }
+  .services__slider-wrapper h3 {
+    font-size: 3.2rem;
+  }
+  .services__slider-wrapper p {
+    font-size: 1.6rem;
   }
 }
 .staff {
