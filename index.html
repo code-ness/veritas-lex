@@ -39,19 +39,19 @@
       <ul class="navbar-modal__nav-list">
         <li class="navbar-modal__nav-item">
           <img src="assets/home.png" alt="">
-          <a id="nav-link-1" href="#header">Main</a>
+          <a class="nav-modal-links-js" id="nav-modal-link-1" href="#header">Main</a>
         </li>
         <li class="navbar-modal__nav-item">
           <img src="assets/balance.png" alt="">
-          <a id="nav-link-2" href="#services">Services</a>
+          <a class="nav-modal-links-js" id="nav-modal-link-2" href="#services">Services</a>
         </li>
         <li class="navbar-modal__nav-item">
           <img src="assets/group.png" alt="">
-          <a id="nav-link-3" href="#staff">Staff</a>
+          <a class="nav-modal-links-js" id="nav-modal-link-3" href="#staff">Staff</a>
         </li>
         <li class="navbar-modal__nav-item">
           <img src="assets/contact.png" alt="">
-          <a id="nav-link-4" href="#contact">Contact Us</a>
+          <a class="nav-modal-links-js" id="nav-modal-link-4" href="#contact">Contact Us</a>
         </li>
       </ul>
     </nav>
@@ -65,28 +65,28 @@
       <nav class="header__nav mob-hide">
         <ul class="header__nav-list">
           <li href="#header" class="header__nav-item">
-            <a id="nav-link-1" href="header">Main</a>
+            <a id="nav-link-1" href="header">Aсосий</a>
           </li>
           <li href="services" class="header__nav-item">
-            <a id="nav-link-2" href="#services">Services</a>
+            <a id="nav-link-2" href="#services">Xizmatlar</a>
           </li>
           <li class="header__nav-item">
-            <a id="nav-link-3" href="#staff">Staff</a>
+            <a id="nav-link-3" href="#staff">Xodimlar</a>
           </li>
           <li class="header__nav-item">
-            <a id="nav-link-4" href="#contact">Contact Us</a>
+            <a id="nav-link-4" href="#contact">Biz bilan bog'laning</a>
           </li>
         </ul>
       </nav>
       <div class="header__locale">
-        <div data-locale_active="RU" class="header__locale-active locale-btn-js">
-          <span class="locale-text-js">RU</span>
-          <img src="./assets/locale/RU.png" alt="uzbek language">
+        <div data-locale_active="" class="header__locale-active locale-btn-js">
+          <span class="locale-text-js"></span>
+          <img src="">
         </div>
-        <div data-locale="UZ" class="header__locale-list none locale-select-js">
+        <div data-locale="" class="header__locale-list none locale-select-js">
           <div class="header__locale-item">
-            <span>UZ</span>
-            <img src="./assets/locale/UZ.png" alt="russian language" class="header__locale-item-img">
+            <span></span>
+            <img src="" class="header__locale-item-img">
           </div>
         </div>
       </div>
@@ -97,17 +97,17 @@
     <section class="hero">
       <div class="container">
         <div class="hero__rich-text">
-          <h1>Trusted legal solutions for the real world.</h1>
-          <p>Organize your tasks, lists and reminders in one app. It will help you a lot.</p>
-          <button>Contact us</button>
+          <h1 id="hero-title">Адолат истайсизми? Биз йулини биламиз</h1>
+          <p id="hero-text">Бизнинг тажрибали адвокатларимиз сиз учун курашишга тайёр.</p>
+          <button id="hero-cta" class="contact-us-js">Биз билан боғланинг</button>
         </div>
         <div class="hero__banner">
           <div class="hero__banner-img">
-            <img src="./assets/hero.jpg" alt="Hero image">
+            <img src="./assets/hero.webp" alt="Hero image">
           </div>
           <div class="hero__banner-text">
-            <p>10+</p>
-            <p>Years of experience in this field.</p>
+            <p>5+</p>
+            <p id="hero-exp">Years of experience in this field.</p>
           </div>
         </div>
       </div>
@@ -115,133 +115,133 @@
 
     <section id="services" class="services">
       <div class="container">
-        <h2 class="section-title">The Area Where We Practice Our Law</h2>
+        <h2 id="services-title" class="section-title">“Veritas Lex” юридик фирмаси қуйидагиларни таъминлайди</h2>
         <div class="services__slider">
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-1-title">Ҳужжатларни тайёрлаш</h3>
+            <p id="service-1-text">Шартномалар лойиҳалари, маълумот сўровлари, аризалар, шикоятлар, даъво аризасига эътирозлар, даъволар, талаблар, даъво аризалари, ҳар қандай мураккабликдаги апеллятсия ва кассатсия шикоятлари.</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Citizenship and immigration</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi saepe quos fugit esse doloremque!</p>
+            <h3 id="service-2-title">Кўчмас мулк операцияларини қўллаб-қувватлаш</h3>
+            <p id="service-2-text">Кўчмас мулкни рўйхатга олиш, уй-жойни хусусийлаштириш, кўчмас мулкни нотурар фондга ўтказиш.</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Criminal cases and defense</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos quas illum quod libero reiciendis.</p>
+            <h3 id="service-3-title">Давлат органлари билан ўзаро ҳамкорлик</h3>
+            <p id="service-3-text">Қурилиш рухсатномасини олиш, кадастр ишлари, литсензиялар ва рухсатномалар олиш</p>
           </div>
           <div class="services__slider-wrapper none">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-4-title">Мерос ишларини олиб бориш</h3>
+            <p id="mob-service-4-text"></p>
           </div>
         </div>
-        <button class="btn-cta btn-cta--mob btn-more-mob-js">Show more</button>
+        <button id="mob-show-more" class="btn-cta btn-cta--mob btn-more-mob-js">Show more</button>
         <div class="services__slider services__slider--mob hidden">
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-5-title">Давлат хизматлари марказидан керакли маълумотномаларни олиш</h3>
+            <p  id="mob-service-5-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-6-title">Рўйхатдан ўтказиш</h3>
+            <p  id="mob-service-6-text">Юридик ва жисмоний шахсларни (тадбиркорлик субъектларини) рўйхатдан ўтказиш (қайта рўйхатдан ўтказиш)</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-7-title">Мажбурий ижро бюросида (MIB) вакиллик</h3>
+            <p  id="mob-service-7-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-8-title">Судда вакиллик</h3>
+            <p  id="mob-service-8-text">Фуқаролик, иқтисодий, ҳакамлик судларида</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-9-title">Низоларни ҳал қилиш</h3>
+            <p  id="mob-service-9-text">Низоларни судгача, хусусан, медиатсия тартиб-таомиллари орқали ҳал қилиш</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-10-title">Оғзаки юридик маслаҳат</h3>
+            <p  id="mob-service-10-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="mob-service-11-title">Оммавий ҳуқуқ низолари</h3>
+            <p  id="mob-service-11-text">Хар қандай мураккабликдаги жиноий, иқтисодий, фуқаролик, маъмурий ишларни юритиш.</p>
           </div>
         </div>
-        <button class="btn-cta btn-cta--mob btn-less-mob-js">Show less</button>
+        <button id="mob-show-less" class="btn-cta btn-cta--mob btn-less-mob-js">Show less</button>
       </div>
     </section>
 
     <section class="services services__more">
       <div class="container">
-        <button class="btn-cta btn-show-more-js">Show more</button>
+        <button id="show-more" class="btn-cta btn-show-more-js">Show more</button>
         <div class="services__slider services__grid hidden services-more-js">
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-4-title">Мерос ишларини олиб бориш</h3>
+            <p id="service-4-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-5-title">Давлат хизматлари марказидан керакли маълумотномаларни олиш</h3>
+            <p id="service-5-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-6-title">Рўйхатдан ўтказиш</h3>
+            <p id="service-6-text">Юридик ва жисмоний шахсларни (тадбиркорлик субъектларини) рўйхатдан ўтказиш (қайта рўйхатдан ўтказиш)</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-7-title">Мажбурий ижро бюросида (MIB) вакиллик</h3>
+            <p id="service-7-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-8-title">Судда вакиллик</h3>
+            <p id="service-8-text">Фуқаролик, иқтисодий, ҳакамлик судларида</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-9-title">Низоларни ҳал қилиш</h3>
+            <p id="service-9-text">Низоларни судгача, хусусан, медиатсия тартиб-таомиллари орқали ҳал қилиш</p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-10-title">Оғзаки юридик маслаҳат</h3>
+            <p id="service-10-text"></p>
           </div>
           <div class="services__slider-wrapper">
-            <h3>Financial capital and business</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio vitae consequatur ab repudiandae natus.</p>
+            <h3 id="service-11-title">Оммавий ҳуқуқ низолари</h3>
+            <p id="service-11-text">Хар қандай мураккабликдаги жиноий, иқтисодий, фуқаролик, маъмурий ишларни юритиш.</p>
           </div>
         </div>
-        <button class="btn-cta btn-show-less-js">Show less</button>
+        <button id="show-less" class="btn-cta btn-show-less-js">Show less</button>
       </div>
     </section>
 
     <section id="staff" class="staff">
       <div class="container">
-        <h2 class="section-title">Our team</h2>
+        <h2 id="staff-title" class="section-title">Бизнинг жамоа</h2>
         <div class="staff__slider swiper swiperStaff">
           <div class="swiper-wrapper">
 
             <div class="staff__box swiper-slide">
-              <img src="./assets/staff/Yusuf.jpg" alt="Staff image">
+              <img src="./assets/staff/Yusuf.webp" alt="Staff image">
               <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
+                <h3 id="staff-1" class="staff__name">Абдуғафоров Юсуф Абдуғафорович</h3>
+                <p id="staff-director" class="staff__position">Адвокат Бошқарувчи</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/staff/feruz.jpg" alt="Staff image">
+              <img src="./assets/staff/feruz.webp" alt="Staff image">
               <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
+                <h3 id="staff-2" class="staff__name">Талибов Феруз Актамович</h3>
+                <p id="staff-partner" class="staff__position">Адвокат Шерик</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/staff/Jamshed.jpg" alt="Staff image">
+              <img src="./assets/staff/Jamshed.webp" alt="Staff image">
               <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
+                <h3 id="staff-3" class="staff__name">Ходжаев Жамшед Кодиркулович</h3>
+                <p id="staff-partner" class="staff__position">Адвокат Шерик</p>
               </div>
             </div>
             <div class="staff__box swiper-slide">
-              <img src="./assets/staff/laziz.jpg" alt="Staff image">
+              <img src="./assets/staff/laziz.webp" alt="Staff image">
               <div class="staff__text-block">
-                <h3 class="staff__name">Gulommirzo Abdugafarov</h3>
-                <p class="staff__position">Senior CSGO Developer</p>
+                <h3 id="staff-4" class="staff__name">Хасанов Лазиз Азизович</h3>
+                <p id="staff-partner" class="staff__position">Адвокат Шерик</p>
               </div>
             </div>
           </div>
@@ -254,23 +254,25 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="contact__map" id="map"></div>
-        <div class="contact__feedback feedback-modal-js">
-          <h3>FEEDBACK FORM</h3>
+        <img class="contact__toggler" src="assets/arrows/top.png" alt="">
+        <div class="contact__feedback feedback-modal-js hidden">
+          <h3 id="form">Мурожаат</h3>
           <form class="contact__form" action="https://formsubmit.co/486730602cfb48096bedce15973bd5f5" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <div class="contact__input-wrapper">
               <input placeholder="" class="contact__input" type="text" id="name" name="Name" required>
-              <label for="name">Name</label>
+              <label id="form-name" for="name">Исм</label>
             </div>
             <div class="contact__input-wrapper">
               <input placeholder="" class="contact__input" type="tel" id="phone" name="Phone" required>
-              <label for="phone">Phone Number</label>
+              <label id="form-phone" for="phone">Телефон рақами</label>
             </div>
             <div class="contact__input-wrapper">
               <textarea placeholder="" class="contact__input contact__input--textarea" type="text" id="feedback" name="Feedback" required></textarea>
-              <label for="feedback">Feedback</label>
+              <label id="form-text" for="feedback">Фикр-мулоҳаза</label>
             </div>
-            <button class="contact__form-btn" type="submit">Send</button>
+            <img class="contact__close" src="assets/cancel.png" alt="">
+            <button id="form-submit" class="contact__form-btn" type="submit">Топшириш</button>
           </form> 
         </div>
       </div>
@@ -279,15 +281,16 @@
   <footer class="footer">
     <div class="container">
       <ul class="footer__address">
-        <h3>OUR ADDRESS</h3>
-        <li>123456 Moscow</li>
-        <li>Lane Dyuzheva</li>
-        <li>building  47 office 202</li>
+        <h3 id="address">бизнинг манзилимиз</h3>
+        <li id="address-1">Амир Тимур кучаси,</li>
+        <li id="address-2">149 уй, мулжал</li>
+        <li id="address-3">Хамкорбанк (Фрунзе)</li>
       </ul>
       <ul class="footer__contacts">
-        <h3>OUR CONTACTS</h3>
+        <h3 id="our-contacts">Бизнинг Контактлар</h3>
         <li>veritaslex@gmail.com</li>
-        <li>+123 4567 89 01</li>
+        <li>+998 90 602 12 87</li>
+        <li>+998 91 531 92 29</li>
       </ul>
       <ul class="footer__socials">
         <a href="#" class="footer__socials-img-wrapper">
@@ -303,7 +306,7 @@
           <img src="assets/socials/telegram.png" alt="Link telegram profile">
         </a>
       </ul>
-      <p class="follow-us">&#8210 follow us</p>
+      <p id="follow" class="follow-us">&#8210 follow us</p>
     </div>
   </footer>
 </body>

@@ -36,3 +36,6 @@ showLessBtnMob.addEventListener("click", () => {
   }, 300);
   services.scrollIntoView(3);
 });
+
+document.querySelector(".contact-us-js").addEventListener("click", () => document.getElementById("contact").scrollIntoView(3));
+

@@ -19,7 +19,8 @@
 
     &-wrapper {
       padding: 2rem 4rem;
-      height: 42rem;
+      width: 100%;
+      min-height: 42rem;
       border: 1px solid $clr-gray-light;
 
       display: flex;
@@ -34,9 +35,10 @@
     h3 {
       width: 80%;
       margin-block: 1.6rem;
-      font-size: 4.2rem;
+      font-size: 3.2rem;
       text-transform: capitalize;
       font-family: "Cormorant Garamond", serif;
+      word-wrap: break-word;
     }
 
     p {
@@ -123,6 +125,9 @@
   }
   .services__slider {
     grid-template-columns: repeat(2, 1fr);
+    &-wrapper {
+      min-height: 38rem;
+    }
     &-wrapper.none {
       display: flex;
     }
@@ -198,6 +203,7 @@
     grid-row-gap: 4rem;
     &-wrapper {
       width: 100%;
+      min-height: 30rem;
 
       h3 {
         font-size: 3.2rem;
