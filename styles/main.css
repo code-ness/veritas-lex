@@ -313,17 +313,20 @@ body {
   .hero .container {
     padding-inline: 6rem;
   }
-}
-@media only screen and (max-width: 1440px) {
-  .hero h1 {
-    font-size: 8rem;
-  }
   .hero__banner-text {
     padding-block: 4rem;
     width: 60%;
     bottom: 4rem;
     right: 50%;
     transform: translateX(50%);
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .hero h1 {
+    font-size: 8rem;
+  }
+  .hero__banner-text {
+    padding: 3rem 4rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -342,7 +345,11 @@ body {
     height: 80%;
   }
   .hero__banner-text {
-    width: 80%;
+    padding: 2rem 3rem;
+    width: 55%;
+  }
+  .hero__banner-text p:first-of-type {
+    font-size: 6.4rem;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -350,7 +357,7 @@ body {
     height: 75%;
   }
   .hero__banner-text {
-    padding: 3rem 5rem;
+    padding: 2rem;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -700,6 +707,9 @@ body {
   .staff__box img {
     height: 50rem;
   }
+  .staff__text-block h3 {
+    font-size: 2.4rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .staff .container {
@@ -710,10 +720,25 @@ body {
   .staff__box img {
     height: 70rem;
   }
+  .staff__text-block {
+    margin-inline: auto;
+    padding: 1.6rem;
+    width: max-content;
+  }
 }
 @media only screen and (max-width: 600px) {
   .staff h2 {
     font-size: 4.5rem;
+  }
+  .staff__text-block {
+    margin-inline: unset;
+    width: unset;
+  }
+  .staff__text-block h3 {
+    font-size: 2rem;
+  }
+  .staff__text-block p {
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -725,6 +750,15 @@ body {
   }
   .staff__box img {
     height: 50rem;
+  }
+  .staff__text-block {
+    padding: 1rem 1.6rem;
+  }
+  .staff__text-block h3 {
+    font-size: 1.8rem;
+  }
+  .staff__text-block p {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -822,8 +856,6 @@ body {
   bottom: -4.2rem;
   width: 3rem;
   height: 3rem;
-  background-color: #fff;
-  border-radius: 10rem;
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s ease-in-out;

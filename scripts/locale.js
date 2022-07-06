@@ -68,6 +68,8 @@ i18next.init({
         "staff-2": "Талибов Феруз Актамович",
         "staff-3": "Ходжаев Жамшед Кодиркулович",
         "staff-4": "Хасанов Лазиз Азизович",
+        "staff-5": "Гуломова Азиза Сабиржановна",
+        "staff-6": "Шермамедов Сухроб Сахибович",
         "staff-director" : "Адвокат Управляющий",
         "staff-partner": "Адвокат Партнёр",
         "form": "ФОРМА ОБРАТНОЙ СВЯЗИ",
@@ -95,11 +97,11 @@ i18next.init({
         "hero-exp": "йиллик тажриба бу соҳада",
         "services-title": "“Veritas Lex” юридик фирмаси қуйидагиларни таъминлайди",
         "service-1-title": "Ҳужжатларни тайёрлаш",
-        "service-1-text": "Шартномалар лойиҳалари, маълумот сўровлари, аризалар, шикоятлар, даъво аризасига эътирозлар, даъволар, талаблар, даъво аризалари, ҳар қандай мураккабликдаги апеллятсия ва кассатсия шикоятлари.",
+        "service-1-text": "Шартномалар лойиҳалари, маълумот сўровлари, аризалар, шикоятлар, даъво аризасига эътирозлар, даъволар, талаблар, даъво аризалари, ҳар қандай мураккабликдаги апелляция ва кассация шикоятлари.",
         "service-2-title": "Кўчмас мулк операцияларини қўллаб-қувватлаш",
         "service-2-text": "Кўчмас мулкни рўйхатга олиш, уй-жойни хусусийлаштириш, кўчмас мулкни нотурар фондга ўтказиш.",
         "service-3-title": "Давлат органлари билан ўзаро ҳамкорлик",
-        "service-3-text": "Қурилиш рухсатномасини олиш, кадастр ишлари, литсензиялар ва рухсатномалар олиш",
+        "service-3-text": "Қурилиш рухсатномасини олиш, кадастр ишлари, лицензиялар ва рухсатномалар олиш",
         "service-4-title": "Мерос ишларини олиб бориш",
         "service-4-text": "",
         "service-5-title": "Давлат хизматлари марказидан керакли маълумотномаларни олиш",
@@ -141,6 +143,8 @@ i18next.init({
         "staff-2": "Талибов Феруз Актамович",
         "staff-3": "Ходжаев Жамшед Кодиркулович",
         "staff-4": "Хасанов Лазиз Азизович",
+        "staff-5": "Ғуломова Азиза Сабиржановна",
+        "staff-6": "Шермамедов Сухроб Сахибович",
         "staff-director" : "Адвокат Бошқарувчи",
         "staff-partner": "Адвокат Шерик",
         "form": "МУРОЖААТ",
@@ -218,8 +222,14 @@ function updateContent() {
   document.getElementById('staff-2').innerHTML = i18next.t('staff-2');
   document.getElementById('staff-3').innerHTML = i18next.t('staff-3');
   document.getElementById('staff-4').innerHTML = i18next.t('staff-4');
+  document.getElementById('staff-5').innerHTML = i18next.t('staff-5');
+  document.getElementById('staff-6').innerHTML = i18next.t('staff-6');
   document.getElementById('staff-director').innerHTML = i18next.t('staff-director');
   document.getElementById('staff-partner').innerHTML = i18next.t('staff-partner');
+  document.getElementById('staff-partner-2').innerHTML = i18next.t('staff-partner');
+  document.getElementById('staff-partner-3').innerHTML = i18next.t('staff-partner');
+  document.getElementById('staff-partner-4').innerHTML = i18next.t('staff-partner');
+  document.getElementById('staff-partner-5').innerHTML = i18next.t('staff-partner');
   document.getElementById('form').innerHTML = i18next.t('form');
   document.getElementById('form-name').innerHTML = i18next.t('form-name');
   document.getElementById('form-phone').innerHTML = i18next.t('form-phone');

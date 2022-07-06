@@ -98,6 +98,13 @@
     .container {
       padding-inline: 6rem;
     }
+    &__banner-text {
+      padding-block: 4rem;
+      width: 60%;
+      bottom: 4rem;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
 }
 
@@ -107,11 +114,7 @@
       font-size: 8rem;
     }
     &__banner-text {
-      padding-block: 4rem;
-      width: 60%;
-      bottom: 4rem;
-      right: 50%;
-      transform: translateX(50%);
+      padding: 3rem 4rem;
     }
   }
 }
@@ -136,7 +139,11 @@
       height: 80%;
 
       &-text {
-        width: 80%;
+        padding: 2rem 3rem;
+        width: 55%;
+        p:first-of-type {
+          font-size: 6.4rem;
+        }
       }
     }
   }
@@ -147,7 +154,7 @@
     height: 75%;
 
     &-text {
-      padding: 3rem 5rem;
+      padding: 2rem;
     }
   }
 }

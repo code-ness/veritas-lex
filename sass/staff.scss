@@ -84,6 +84,11 @@
         height: 50rem;
       }
     }
+    &__text-block {
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
   }
 }
 
@@ -101,6 +106,11 @@
         height: 70rem;
       }
     }
+    &__text-block {
+      margin-inline: auto;
+      padding: 1.6rem;
+      width: max-content;
+    }
   }
 } 
 
@@ -108,6 +118,16 @@
   .staff {
     h2 {
       font-size: 4.5rem;
+    }
+    &__text-block {
+      margin-inline: unset;
+      width: unset;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -121,6 +141,15 @@
     &__box {
       img {
         height: 50rem;
+      }
+    }
+    &__text-block {
+      padding: 1rem 1.6rem;
+      h3 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.2rem;
       }
     }
   }
