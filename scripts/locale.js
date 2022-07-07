@@ -70,6 +70,7 @@ i18next.init({
         "staff-4": "Хасанов Лазиз Азизович",
         "staff-5": "Гуломова Азиза Сабиржановна",
         "staff-6": "Шермамедов Сухроб Сахибович",
+        "staff-7": "Толлиев Азизжон Фарходович",
         "staff-director" : "Адвокат Управляющий",
         "staff-partner": "Адвокат Партнёр",
         "form": "ФОРМА ОБРАТНОЙ СВЯЗИ",
@@ -145,6 +146,7 @@ i18next.init({
         "staff-4": "Хасанов Лазиз Азизович",
         "staff-5": "Ғуломова Азиза Сабиржановна",
         "staff-6": "Шермамедов Сухроб Сахибович",
+        "staff-7": "Толлиев Азизжон Фарходович",
         "staff-director" : "Адвокат Бошқарувчи",
         "staff-partner": "Адвокат Шерик",
         "form": "МУРОЖААТ",
@@ -224,12 +226,9 @@ function updateContent() {
   document.getElementById('staff-4').innerHTML = i18next.t('staff-4');
   document.getElementById('staff-5').innerHTML = i18next.t('staff-5');
   document.getElementById('staff-6').innerHTML = i18next.t('staff-6');
-  document.getElementById('staff-director').innerHTML = i18next.t('staff-director');
-  document.getElementById('staff-partner').innerHTML = i18next.t('staff-partner');
-  document.getElementById('staff-partner-2').innerHTML = i18next.t('staff-partner');
-  document.getElementById('staff-partner-3').innerHTML = i18next.t('staff-partner');
-  document.getElementById('staff-partner-4').innerHTML = i18next.t('staff-partner');
-  document.getElementById('staff-partner-5').innerHTML = i18next.t('staff-partner');
+  document.getElementById('staff-7').innerHTML = i18next.t('staff-7');
+  document.querySelectorAll("#staff-director").forEach(staff => staff.innerHTML = i18next.t('staff-director'));
+  document.querySelectorAll("#staff-partner").forEach(staff => staff.innerHTML = i18next.t('staff-partner'));
   document.getElementById('form').innerHTML = i18next.t('form');
   document.getElementById('form-name').innerHTML = i18next.t('form-name');
   document.getElementById('form-phone').innerHTML = i18next.t('form-phone');
