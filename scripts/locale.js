@@ -172,6 +172,10 @@ function updateContent() {
   document.getElementById('nav-link-2').innerHTML = i18next.t('nav-link-2');
   document.getElementById('nav-link-3').innerHTML = i18next.t('nav-link-3');
   document.getElementById('nav-link-4').innerHTML = i18next.t('nav-link-4');
+  document.getElementById('nav-modal-link-1').innerHTML = i18next.t('nav-link-1');
+  document.getElementById('nav-modal-link-2').innerHTML = i18next.t('nav-link-2');
+  document.getElementById('nav-modal-link-3').innerHTML = i18next.t('nav-link-3');
+  document.getElementById('nav-modal-link-4').innerHTML = i18next.t('nav-link-4');
   document.getElementById('hero-title').innerHTML = i18next.t('hero-title');
   document.getElementById('hero-text').innerHTML = i18next.t('hero-text');
   document.getElementById('hero-cta').innerHTML = i18next.t('hero-cta');
