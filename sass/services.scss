@@ -50,6 +50,10 @@
 
 }
 
+.services__slider-wrapper--mob-switch {
+  display: none;
+}
+
 .services__slider--mob {
   display: none;
 }
@@ -177,6 +181,9 @@
     .services__slider {
       grid-template-columns: 1fr;
 
+      &-wrapper.none {
+        display: none;
+      }
       &-wrapper {
         margin-inline: auto;
         align-items: center;
@@ -190,6 +197,9 @@
   }
   .services__slider--mob {
     max-height: 350rem;
+  }
+  .services__slider-wrapper--mob-switch {
+    display: flex;
   }
 }
 

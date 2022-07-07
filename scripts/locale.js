@@ -41,6 +41,8 @@ i18next.init({
         "service-10-text": "",
         "service-11-title": "Публично-правовые споры",
         "service-11-text": "Ведение уголовных, экономических, гражданских, административных дел любой сложности.",
+        "service-12-title": "Ведение наследственного дела",
+        "service-12-text": "",
         "mob-service-3-title": "Взаимодействие с государственными органами",
         "mob-service-3-text": "Получение разрешения на строительство, кадастровые работы, получение лицензий и разрешений.",
         "mob-service-4-title": "Ведение наследственного дела",
@@ -119,6 +121,8 @@ i18next.init({
         "service-10-text": "",
         "service-11-title": "Оммавий ҳуқуқ низолари",
         "service-11-text": "Хар қандай мураккабликдаги жиноий, иқтисодий, фуқаролик, маъмурий ишларни юритиш.",
+        "service-12-title": "Мерос ишларини олиб бориш",
+        "service-12-text": "",
         "mob-service-4-title": "Мерос ишларини олиб бориш",
         "mob-service-4-text": "",
         "mob-service-5-title": "Давлат хизматлари марказидан керакли маълумотномаларни олиш",
@@ -203,6 +207,8 @@ function updateContent() {
   document.getElementById('service-10-text').innerHTML = i18next.t('service-10-text');
   document.getElementById('service-11-title').innerHTML = i18next.t('service-11-title');
   document.getElementById('service-11-text').innerHTML = i18next.t('service-11-text');
+  document.getElementById('service-12-title').innerHTML = i18next.t('service-12-title');
+  document.getElementById('service-12-text').innerHTML = i18next.t('service-12-text');
   document.getElementById('mob-service-4-title').innerHTML = i18next.t('mob-service-4-title');
   document.getElementById('mob-service-4-text').innerHTML = i18next.t('mob-service-4-text');
   document.getElementById('mob-service-5-title').innerHTML = i18next.t('mob-service-5-title');
